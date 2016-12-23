@@ -8,7 +8,6 @@ var express = require('express')
 
 
 var app = express()
-var port = 80
 
 function compile(str, path) {
   return stylus(str)
@@ -32,4 +31,4 @@ app.get('/', function (req, res) {
   )
 })
 
-app.listen(port)
+app.listen(80)
