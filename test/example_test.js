@@ -4,7 +4,7 @@ var should = require('should');
 
 var branchName = process.env.TRAVIS_BRANCH
     var branchUrl = branchName
-        ? 'http://[your prefix]-' + branchName + '.herokuapp.com'
+        ? 'http://azci-' + branchName + '.herokuapp.com'
         : 'http://myurl.com'
     
 describe('Home page tests', function() {
