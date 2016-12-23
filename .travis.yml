@@ -19,7 +19,7 @@ before_deploy:
 - cat .netrc >> $HOME/.netrc
 - chmod 0600 /home/travis/.netrc
 - heroku apps
-- heroku apps | grep -q azci-$TRAVIS_BRANCH || heroku apps:create [app-prefix]-$TRAVIS_BRANCH
+- heroku apps | grep -q azci-$TRAVIS_BRANCH || heroku apps:create azci-$TRAVIS_BRANCH
 - heroku git:remote -a azci-$TRAVIS_BRANCH
 
 deploy:
